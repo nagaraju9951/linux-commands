@@ -1,3 +1,4 @@
+
 # File Commamds
 
     • ls : The command is used  for in listing contents inside a directory.
@@ -311,83 +312,82 @@
 
  08/04/2023
 
-   66  ls
-   67  ls -ltr
-   68  ssh -i"demo-ec2.pem" ubuntu@50.18.85.216
-   69  chmod 400 demo
-   70  chmod 400 demo-ec2.pem
-   71  cd ~/Downloads/demo/
-   72  chmod 400 demo-ec2.pem
-   73  cd ..
-   74  git clone https://github.com/nagaraju9951/Linux-comands-Update.git
-   75  ls
-   76  ssh -i "demo-ec2.pem" ubuntu@50.18.85.216
-   77  ls
-   78  ssh -i "demo-ec2.pem" ubuntu@50.18.85.216
-   79  chmod 400 demo-ec2.pem
-   80  ssh -i "demo-ec2.pem" ubuntu@50.18.85.216
-   81  scp -i "demo-ec2.pem" -r linux-commands-updates ubuntu@50.18.85.216:/home/ubuntu/mk
-   82  scp -i "demo-ec2.pem" -r  ubuntu@50.18.85.216:/home/ubuntu/
-   83  Linux-comands-Update
-   84  scp -i "demo-ec2.pem" -r 
-   85  Linux-comands-Update
-   86  scp -i "demo-ec2.pem" -r Linux-commands-Update ubuntu@50.18.85.216:/home/ubuntu/mk
-   87  scp -i "demo-ec2.pem" -r Linux-comands-Update ubuntu@50.18.85.216:/home/ubuntu/mk
-   88  ssh -i "demo-ec2.pem" ubuntu@50.18.85.216
-   89  asss
-   90  exit
-   91  ssh -i"demo-ec2.pem" ec2-user@13.56.79.16
-   92  ssh - i demo-ec2.pem ec2-user@13.56.79.16
-   93  ssh -i "demo-ec2.pem" ec2-user@13.56.79.16
-   94  ls -ltr
-   95  ssh -i "demo-ec2.pem ec2-user@172.31.19.29
-   96  ssh -i "demo-ec2.pem" ec2-user@172.31.19.29
-   97  ssh -i "demo-ec2.pem ec2-user@172.31.19.29
-   98  ssh -i "demo-ec2.pem" ec2-user@13.56.79.16
-   99  ssh -i "demo-ec2.pem ec2-user@172.31.19.29
-  100  ssh -i "demo-ec2.pem" ec2-user@13.56.79.16
-  101  ls -ltr
-  102  ssh -i demo-ec2.pem ec2-user@13.56.79.16
-  103  history
-  104  clear
-  105  ls
-  106  ll -ls
-  107  ssh -i "demo-ec2.pem" ubuntu@18.144.75.55
-  108  chmod 400 demo-ec2.pem
-  109  chmod 400 "demo-ec2.pem"
-  110  git clone https://github.com/nagaraju9951/Linux-comands-Update.git
-  111  ls
-  112  chmod 400 demo-ec2.pem
-  113  chmod 400 "demo-ec2.pem"
-  114  ls -ltr
-  115  ssh -i "demo-ec2.pem" ubuntu@13.52.213.151
-  116  cd
-  117  history
+66.  ls
+67.  ls -ltr
+68. ssh -i"demo-ec2.pem" ubuntu@50.18.85.216
+69.  chmod 400 demo
+70.  chmod 400 demo-ec2.pem
+71.  cd ~/Downloads/demo/
+72.  chmod 400 demo-ec2.pem
+73.  cd ..
+74. git clone https://github.com/nagaraju9951/Linux-comands-Update.git
+75.  ls
+76.  ssh -i "demo-ec2.pem" ubuntu@50.18.85.216
+77.  ls
+78.  ssh -i "demo-ec2.pem" ubuntu@50.18.85.216
+79.  chmod 400 demo-ec2.pem
+80.  ssh -i "demo-ec2.pem" ubuntu@50.18.85.216
+81.  scp -i "demo-ec2.pem" -r linux-commands-updates ubuntu@50.18.85.216:/home/ubuntu/mk
+82.  scp -i "demo-ec2.pem" -r  ubuntu@50.18.85.216:/home/ubuntu/
+83.  Linux-comands-Update
+84.  scp -i "demo-ec2.pem" -r 
+85.  Linux-comands-Update
+86.  scp -i "demo-ec2.pem" -r Linux-commands-Update ubuntu@50.18.85.216:/home/ubuntu/mk
+87.  scp -i "demo-ec2.pem" -r Linux-comands-Update ubuntu@50.18.85.216:/home/ubuntu/mk
+88.  ssh -i "demo-ec2.pem" ubuntu@50.18.85.216
+89.  asss
+90.  exit
+91.  ssh -i"demo-ec2.pem" ec2-user@13.56.79.16
+92.  ssh - i demo-ec2.pem ec2-user@13.56.79.16
+93.  ssh -i "demo-ec2.pem" ec2-user@13.56.79.16
+94.  ls -ltr
+95.  ssh -i "demo-ec2.pem ec2-user@172.31.19.29
+96.  ssh -i "demo-ec2.pem" ec2-user@172.31.19.29
+97.  ssh -i "demo-ec2.pem ec2-user@172.31.19.29
+98.  ssh -i "demo-ec2.pem" ec2-user@13.56.79.16
+99.  ssh -i "demo-ec2.pem ec2-user@172.31.19.29
+100.  ssh -i "demo-ec2.pem" ec2-user@13.56.79.16
+101. ls -ltr
+102.  ssh -i demo-ec2.pem ec2-user@13.56.79.16
+103.  history
+104.  clear
+105.  ls
+106.  ll -ls
+107.  ssh -i "demo-ec2.pem" ubuntu@18.144.75.55
+108.  chmod 400 demo-ec2.pem
+109.  chmod 400 "demo-ec2.pem"
+110.  git clone https://github.com/nagaraju9951/Linux-comands-Update.git
+111 . ls
+112.  chmod 400 demo-ec2.pem
+113.  chmod 400 "demo-ec2.pem"
+114.  ls -ltr
+115.  ssh -i "demo-ec2.pem" ubuntu@13.52.213.151
+116.  cd
+117.  history
 
 09/04/2023
 
-  115  ssh -i "demo-ec2.pem" ubuntu@13.52.213.151
-  116  cd
-  117  history
-  118  clear
-  119  ls
-  120  cd Download
-  121  cd Downloads
-  122  ls
-  123  ssh -i "demo-ec2.pem" ubuntu@54.219.176.180
-  124  scp -rp "demo-ec2.pem" ubuntu@54.219.176.180:/home/ubuntu/dell
-  125  scp -rp Linux-comands-Update ec2-user@54.241.109.221:/home/ubuntu/dell
-  126  scp -rp Linux-comands-Update ubuntu@54.241.109.221:/home/ubuntu/dell
-  127* 
-  128  scp -rp "demo-ec2.pem" ubuntu@54.219.176.180:/home/ubuntu/dell
-  129  scp -rp Linux-comands-Update ubuntu@54.219.176.180:/home/ubuntu/dell
-  130  ls
-  131  ssh -i "demo-ec2.pem" ec2-user@54.241.109.221
-  132  ssh -i "demo-ec2.pem" ubuntu@54.241.109.221
-  133  scp -rp "demo-ec2.pem" ubuntu@54.241.109.221:/home/ubuntu/dell
-  134  scp -rp "demo-ec2.pem" ubuntu@54.241.109.221:/home/ubuntu/dell1
-  135  scp -rp demo-ec2.pem ubuntu@54.241.109.221:/home/ubuntu/dell1
-  136  scp -rp "demo-ec2.pem" ubuntu@54.241.109.221:/home/ubuntu/dell1
-  137  scp -rp Linux-comands-Update ubuntu@54.241.109.221:/home/ubuntu/dell1
-  138  history
-
+115.  ssh -i "demo-ec2.pem" ubuntu@13.52.213.151
+116.  cd
+117.  history
+118.  clear
+119.  ls
+120.  cd Download
+121.  cd Downloads
+122.  ls
+123.  ssh -i "demo-ec2.pem" ubuntu@54.219.176.180
+124.  scp -rp "demo-ec2.pem" ubuntu@54.219.176.180:/home/ubuntu/dell
+125.  scp -rp Linux-comands-Update ec2-user@54.241.109.221:/home/ubuntu/dell
+126.  scp -rp Linux-comands-Update ubuntu@54.241.109.221:/home/ubuntu/dell
+127. 
+128.  scp -rp "demo-ec2.pem" ubuntu@54.219.176.180:/home/ubuntu/dell
+129.  scp -rp Linux-comands-Update ubuntu@54.219.176.180:/home/ubuntu/dell
+130.  ls
+131.  ssh -i "demo-ec2.pem" ec2-user@54.241.109.221
+132.  ssh -i "demo-ec2.pem" ubuntu@54.241.109.221
+133.  scp -rp "demo-ec2.pem" ubuntu@54.241.109.221:/home/ubuntu/dell
+134.  scp -rp "demo-ec2.pem" ubuntu@54.241.109.221:/home/ubuntu/dell1
+135.  scp -rp demo-ec2.pem ubuntu@54.241.109.221:/home/ubuntu/dell1
+136.  scp -rp "demo-ec2.pem" ubuntu@54.241.109.221:/home/ubuntu/dell1
+137.  scp -rp Linux-comands-Update ubuntu@54.241.109.221:/home/ubuntu/dell1
+138.  history
