@@ -394,7 +394,7 @@
 
 
 12/04/2023
-ls
+      ls
 642.  ls -l
 643.  cd Downloads/
 644.  ls -l
@@ -431,4 +431,5 @@ ls
 675.  ssh demohost 
 676.  ssh jumphost
 677.  cd
+
 
