@@ -390,4 +390,45 @@
 135.  scp -rp demo-ec2.pem ubuntu@54.241.109.221:/home/ubuntu/dell1
 136.  scp -rp "demo-ec2.pem" ubuntu@54.241.109.221:/home/ubuntu/dell1
 137.  scp -rp Linux-comands-Update ubuntu@54.241.109.221:/home/ubuntu/dell1
-138.  history
+138.  history 
+
+
+12/04/2023
+ls
+642.  ls -l
+643.  cd Downloads/
+644.  ls -l
+645.  chmod "jumphostkey.pem"
+646.  chmod 400 "jumphostkey.pem"
+647.  ls -l
+648.  chmod 400 "demokey.pem"
+649.  ls -l
+650.  cd .ssh
+651.  exit
+652.  ls -l
+653.  cd .ssh
+654.  ls
+655.  vi config
+656.  ssh demohost
+657.  jumphost
+658.  cd
+659.  cd Downloads/
+660.  ls l
+661.  ls -l
+662.  cd
+663.  cd .ssh
+664.  vi config
+665.  ssh demohost
+666.  ssh jumphost
+667.  ls
+668.  cat config
+669.  vi config 
+670.  ssh demohost 
+671.  cat /home/nagaraju/Downloads/demokey.pem
+672.  cat /home/nagaraju/Downloads/jumphostkey.pem
+673.  ls
+674.  vi config 
+675.  ssh demohost 
+676.  ssh jumphost
+677.  cd
+
