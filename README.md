@@ -1,4 +1,5 @@
 
+
 # File Commamds
 
     • ls : The command is used  for in listing contents inside a directory.
@@ -394,7 +395,7 @@
 
 
 12/04/2023
-      ls
+ls
 642.  ls -l
 643.  cd Downloads/
 644.  ls -l
@@ -432,4 +433,90 @@
 676.  ssh jumphost
 677.  cd
 
+# personal AWS account
+   A personal AWS (Amazon Web Services) account is a type of account that an individual can create to access and use various cloud computing services  	    offered by Amazon through AWS. These services include computing, storage, databWhen you create a KMS key, AWS generates a unique cryptographic key #KMS(Encryption) Keys
+   key management servicethe is used to encrypt and decrypt your data. You can then use this key to encrypt your data before storing it in an AWS 		service, and decrypt it when you need to retrieve it.ase, analytics, and other related services.Security Groups
+# Security Groups
+  Security Groups can be thought of as a set of rules that define what traffic is allowed to enter or leave a specific resource. For example, you can       create a Security Group that allows inbound SSH traffic on port 22, or outbound HTTP traffic on port 80.
+  Ex : 1 default security
+       2 custom security.
+    
+# SSH keys in AWS.
+   Shh is Secure Shell is a network protocol used to securely connect to and manage remote servers or instances in a virtual private cloud (VPC) in AWS.    It provides a secure way to access and manage your EC2 (Elastic Compute Cloud) instances, without exposing them to the public internet.
+   
+ # Create an Encryption key with KMS in Aws
+    KMS is Key Management Service KMS is a fully managed service that makes it easy for you to create, control, and manage encryption keys used to secure     your data. 
+    steps to create KMS
+    1.Open the AWS Management Console and navigate to the KMS service.
+    2.Click on "Create key" and select the type of key you want to create. You can choose either symmetric or asymmetric encryption.
+    3.Set the key details, such as the alias, description, and key usage permissions.
+    4.Configure the key policy to specify who can use the key and what actions they can perform.
+    5.Review and confirm the settings, and then create the key.
+    
+ # Create security Groups in Aws
+        1 .Open the AWS Management Console and navigate to the EC2 (Elastic Compute Cloud) service.
 
+	2 .Click on "Security Groups" in the left-hand navigation pane.
+
+	3 .Click on the "Create Security Group" button.
+
+	4 .Enter a name and description for the Security Group.
+
+	5 .Choose the VPC (Virtual Private Cloud) for which the Security Group will apply.
+
+	6 .Add inbound and outbound rules to the Security Group. These rules specify the type of traffic that is allowed or denied in the Security Group.            For example, you can allow inbound SSH traffic on port 22 from a specific IP address or range.
+
+	7 .Review the Security Group settings and click on "Create Security Group".
+	
+# create ssh key in aws
+   The key pair consists of a public key and a private key, and it allows for secure and encrypted communication between the client (your computer) and      the server.
+   steps to create ssh keys
+       1. Open the AWS Management Console and navigate to the EC2 (Elastic Compute Cloud) service.
+
+	2. Click on "Key Pairs" in the left-hand navigation pane.
+
+	3. Click on the "Create Key Pair" button.
+
+	4. Enter a name for the key pair in the "Key pair name" field.
+
+	5. Select "SSH-2" as the key pair type.
+
+	6. Click on the "Create Key Pair" button.
+
+	7. The private key file will be downloaded automatically. Save this file in a secure location on your computer.
+
+	8. The public key will be displayed in the console. Copy the public key to use when connecting to your EC2 instances.
+	
+# Open only necessary ports in the Security Group
+
+
+	1. Open the AWS Management Console and navigate to the EC2 (Elastic Compute Cloud) service.
+
+	2. Click on "Security Groups" in the left-hand navigation pane.
+
+	3. Select the Security Group you want to modify and click on the "Inbound Rules" tab.
+
+	4. Click on the "Edit" button.
+
+	5. Modify the inbound rules to allow only necessary ports.
+
+	6. Remove any existing rules that are not necessary.
+
+	7. Click on the "Save Rules" button to apply the changes.
+	
+#EC2 Instances
+  EC2 instances can be used for a variety of purposes, such as hosting websites, running applications, performing data processing and analysis.
+  
+#instances types
+	1. General purpose
+	2. Compute optimized
+	3. Memory optimized
+	4. Storage optimized
+#Volumes in Aws
+       1. Sign in to the AWS Management Console and navigate to the EC2 dashboard.
+       2. Click on "Volumes" in the left-hand menu.
+       3. Click on the "Create Volume" button.
+       4. Specify the volume settings, such as volume type, size, availability zone, etc.
+       5. Click on the "Create" button to create the volume.
+	Once the volume is created, you can attach it to an EC2 instance or keep it as a separate volume for storage.
+	
