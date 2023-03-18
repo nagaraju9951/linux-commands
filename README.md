@@ -139,9 +139,9 @@
                  sudo useradd hk.
            user exist or not : cat /etc/passwd enter
 
-    • passwd : This command is used to delete the existing user.
-                Ex :    sudo passwd mk.
-                sudo passwd hk.
+    • passwd : This command is used to to change the password.
+                Ex :   sudo passwd mk.
+                       sudo passwd hk.
 
     • userdel :  to verify deletion is complete or not.
             Ex :    Sudo userdel mk
@@ -464,59 +464,154 @@ ls
 
 	5 .Choose the VPC (Virtual Private Cloud) for which the Security Group will apply.
 
-	6 .Add inbound and outbound rules to the Security Group. These rules specify the type of traffic that is allowed or denied in the Security Group.            For example, you can allow inbound SSH traffic on port 22 from a specific IP address or range.
+	6 .Add inbound and outbound rules to the Security Group.
+	These rules specify the type of traffic that is allowed or denied in the Security Group. For example, 
+	you can allow inbound SSH traffic on port 22 from a specific IP address or range.
 
 	7 .Review the Security Group settings and click on "Create Security Group".
 	
 # create ssh key in aws
    The key pair consists of a public key and a private key, and it allows for secure and encrypted communication between the client (your computer) and      the server.
    steps to create ssh keys
-       1. Open the AWS Management Console and navigate to the EC2 (Elastic Compute Cloud) service.
+1. Open the AWS Management Console and navigate to the EC2 (Elastic Compute Cloud) service.
+2. Click on "Key Pairs" in the left-hand navigation pane.
+3. Click on the "Create Key Pair" button.
 
-	2. Click on "Key Pairs" in the left-hand navigation pane.
+4. Enter a name for the key pair in the "Key pair name" field.
 
-	3. Click on the "Create Key Pair" button.
+5. Select "SSH-2" as the key pair type.
 
-	4. Enter a name for the key pair in the "Key pair name" field.
+6. Click on the "Create Key Pair" button.
 
-	5. Select "SSH-2" as the key pair type.
+7. The private key file will be downloaded automatically. Save this file in a secure location on your computer.
 
-	6. Click on the "Create Key Pair" button.
-
-	7. The private key file will be downloaded automatically. Save this file in a secure location on your computer.
-
-	8. The public key will be displayed in the console. Copy the public key to use when connecting to your EC2 instances.
+8. The public key will be displayed in the console. Copy the public key to use when connecting to your EC2 instances.
 	
 # Open only necessary ports in the Security Group
 
 
-	1. Open the AWS Management Console and navigate to the EC2 (Elastic Compute Cloud) service.
+1. Open the AWS Management Console and navigate to the EC2 (Elastic Compute Cloud) service.
 
-	2. Click on "Security Groups" in the left-hand navigation pane.
+2. Click on "Security Groups" in the left-hand navigation pane.
 
-	3. Select the Security Group you want to modify and click on the "Inbound Rules" tab.
+3. Select the Security Group you want to modify and click on the "Inbound Rules" tab.
 
-	4. Click on the "Edit" button.
+4. Click on the "Edit" button.
 
-	5. Modify the inbound rules to allow only necessary ports.
+5. Modify the inbound rules to allow only necessary ports.
 
-	6. Remove any existing rules that are not necessary.
+6. Remove any existing rules that are not necessary.
 
-	7. Click on the "Save Rules" button to apply the changes.
+7. Click on the "Save Rules" button to apply the changes.
 	
 #EC2 Instances
-  EC2 instances can be used for a variety of purposes, such as hosting websites, running applications, performing data processing and analysis.
+  EC2 instances can be used for a variety of purposes, such as hosting websites, running applications, 
+  performing data processing and analysis.
   
 #instances types
-	1. General purpose
-	2. Compute optimized
-	3. Memory optimized
-	4. Storage optimized
+1. General purpose
+2. Compute optimized
+3. Memory optimized
+\4. Storage optimized
 #Volumes in Aws
-       1. Sign in to the AWS Management Console and navigate to the EC2 dashboard.
-       2. Click on "Volumes" in the left-hand menu.
-       3. Click on the "Create Volume" button.
-       4. Specify the volume settings, such as volume type, size, availability zone, etc.
-       5. Click on the "Create" button to create the volume.
-	Once the volume is created, you can attach it to an EC2 instance or keep it as a separate volume for storage.
-	
+1. Sign in to the AWS Management Console and navigate to the EC2 dashboard.
+2. Click on "Volumes" in the left-hand menu.
+3. Click on the "Create Volume" button.
+4. Specify the volume settings, such as volume type, size, availability zone, etc.
+5. Click on the "Create" button to create the volume.
+Once the volume is created, you can attach it to an EC2 instance or keep it as a separate volume for storage.
+
+# Amis 
+Amazon provides a variety of public AMIs that users can choose from, or users can 	create their own custom AMIs based on their specific requirements. AMIs can also be 	shared between users or kept private for personal use.
+
+# snapshots 
+a snapshots takes a copy of EBS volume and place it in Amzon s3 ,
+where it is stored redundantly in multiple Avalibility zones. 
+snapshots are a useful tool for creating backups, 
+testing new configurations, and recovering from failures or other issues.
+
+# EC2 Instances menu
+1.instance : instance is nothing but the Instances in AWS can be created from pre-configured Amazon Machine Images (AMIs) that contain an operating system and any additional software or configuration that is required for the application. 
+Instances can be launched, stopped, started, and terminated as needed, providing flexibility in managing computing resources in the cloud.
+
+2.Instance types in aws ec2 : There are a wide variety of instance types available in AWS, each with its own set of specifications and features.
+  -- types of instances
+  a.General-purpose instances
+  b.Compute-optimized instances
+  c.Memory-optimized instances
+  d.Storage-optimized instances 
+  
+#Launch template 
+Launch Templates allow you to specify various parameters for EC2 instances,
+such as instance type, storage, security groups, network settings, and more. 
+By defining these settings in a Launch Template, you can quickly and easily launch multiple instances with consistent configurations and settings.
+
+# sopt request
+1. Spot Requests allow you to take advantage of unused EC2 capacity in the AWS cloud, which can help reduce your EC2 costs.
+2. Spot instances are ideal for workloads that are flexible in terms of when they can be run, such as batch jobs, background processing, and               development/testing environments.
+
+ first open cloud9 in search box
+
+# Create a snapshot from the root volume of the above instance and create a custom AMI
+from the snapshot.
+ Stemps for snapshort : 
+	1. go instace select it
+	2. select volume and select the volume and click actions and create snap
+	3. select snap and
+	4. press CLOUD WATCH in seacrch box and select rules.
+	5 . give details which has appeared on screen.
+# Create EC2 Instance from the Custom AMI.
+1. Go to the AWS Management Console and navigate to the EC2 service.
+2. Click on "Launch Instance" button to create a new instance.
+3. In the "Choose an Amazon Machine Image (AMI)" step, select "My AMIs".
+4. Select the custom AMI you want to use to launch the instance.
+5. Choose an instance type based on your requirements.
+6. Configure the instance details, such as VPC, subnet, security group, and key pair.
+7. Review the instance details and click on the "Launch" button.
+8. If you selected an existing key pair during instance configuration, download the private key (.pem) file and store it in a safe place. If you did not 9 .select an existing key pair, create and download a new key pair.
+10. Wait for the instance to launch. Once it is launched, you can connect to it using SSH or Remote Desktop depending on the operating system of the   		instance.
+After connecting to the instance, you can customize it as per your requirements.
+
+# Configure local .ssh/config to connect to remote EC2 instances.
+115.  ssh -i "demo-ec2.pem" ubuntu@13.52.213.151
+116.  cd
+119.  ls
+120.  cd Download
+121.  cd Downloads
+122.  ls
+123.  ssh -i "demo-ec2.pem" ubuntu@54.219.176.180
+124.  scp -rp "demo-ec2.pem" ubuntu@54.219.176.180:/home/ubuntu/dell
+126.  scp -rp Linux-comands-Update ubuntu@54.241.109.221:/home/ubuntu/dell
+129.  scp -rp Linux-comands-Update ubuntu@54.219.176.180:/home/ubuntu/dell
+130.  ls
+131.  ssh -i "demo-ec2.pem" ec2-user@54.241.109.221
+138.  history 
+
+# NACL 
+NACL helps in providing a firewall there by helping secure the VPCs and subnets. 
+It helps provide a security layer which controls and efficiently manages the traffic that moves around in the subnets. 
+It is an optional layer for VPC, which adds another security layer to the Amazon service. 
+
+# s3 Bucket
+ s3 : amazon simple storage service
+ S3 provides a simple web services interface that enables you to store and retrieve any amount of data from anywhere on the web. 
+ stemps to create s3 bucket
+1. search bar search s3
+2. Click on the "Create Bucket" button.
+3. Enter a unique and descriptive name for your bucket.
+4. Select the region in which you want to create the bucket.
+5. Choose the appropriate settings for the properties, such as versioning and encryption, based on your needs.
+6. Set the permissions for your bucket, including access control policies and permissions.
+Review your settings and click "Create Bucket" to create your S3 bucket.
+
+# ELB
+It helps improve the availability, scalability, and reliability of applications by distributing traffic
+across multiple targets and automatically routing traffic to healthy targets in the event of a target failure.
+
+# target group
+Target Groups can be used with both Application Load Balancers (ALB) and Network Load Balancers (NLB). 
+When a request is received by the load balancer, it is routed to a specific Target Group based on the rules and conditions defined in the load balancer. The Target Group then routes the request to a set of targets that meet the criteria specified in the Target Group configuration.
+
+
+
+
