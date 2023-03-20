@@ -505,10 +505,12 @@ ls
 7. Click on the "Save Rules" button to apply the changes.
 	
 #EC2 Instances
+
   EC2 instances can be used for a variety of purposes, such as hosting websites, running applications, 
   performing data processing and analysis.
   
-#instances types
+# Instances types
+
 1. General purpose
 2. Compute optimized
 3. Memory optimized
@@ -524,7 +526,7 @@ Once the volume is created, you can attach it to an EC2 instance or keep it as a
 # Amis 
 Amazon provides a variety of public AMIs that users can choose from, or users can 	create their own custom AMIs based on their specific requirements. AMIs can also be 	shared between users or kept private for personal use.
 
-# snapshots 
+# Snapshots 
 a snapshots takes a copy of EBS volume and place it in Amzon s3 ,
 where it is stored redundantly in multiple Avalibility zones. 
 snapshots are a useful tool for creating backups, 
@@ -608,10 +610,6 @@ Review your settings and click "Create Bucket" to create your S3 bucket.
 It helps improve the availability, scalability, and reliability of applications by distributing traffic
 across multiple targets and automatically routing traffic to healthy targets in the event of a target failure.
 
-# target group
-Target Groups can be used with both Application Load Balancers (ALB) and Network Load Balancers (NLB). 
-When a request is received by the load balancer, it is routed to a specific Target Group based on the rules and conditions defined in the load balancer. The Target Group then routes the request to a set of targets that meet the criteria specified in the Target Group configuration.
+# Target group
 
-
-
-
+Target Groups can be used with both Application Load Balancers (ALB) and Network Load Balancers (NLB). When a request is received by the load balancer, it is routed to a specific Target Group based on the rules and conditions defined in the load balancer. The Target Group then routes the request to a set of targets that meet the criteria specified in the Target Group configuration.
