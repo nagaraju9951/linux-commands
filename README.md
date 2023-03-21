@@ -257,7 +257,7 @@
              Ex : cd devops
                      cat /vat/log .
 
-    • journalctl : is a powerful tool for working with system logs and troubleshooting issues in Linux operating systems.
+    • Journalctl : is a powerful tool for working with system logs and troubleshooting issues in Linux operating systems.
 	Ex :  journalctl.
 	        journalctl -S "2023-03-01 00:00:00" -U "2023-03-07 23:59:59" .
 
@@ -613,3 +613,16 @@ across multiple targets and automatically routing traffic to healthy targets in 
 # Target group
 
 Target Groups can be used with both Application Load Balancers (ALB) and Network Load Balancers (NLB). When a request is received by the load balancer, it is routed to a specific Target Group based on the rules and conditions defined in the load balancer. The Target Group then routes the request to a set of targets that meet the criteria specified in the Target Group configuration.
+
+# Launch Configurations
+  Launch Configurations are a way to define the specifications of instances to be launched in an Auto Scaling group.
+
+# Auto Scaling Groups
+ Auto Scaling group is a way to automatically launch and manage multiple instances based on the conditions you specify.
+ Bebfore auto scaling you have to create the launch template
+ 
+ steps : 1. create launch template.
+ 	  2. create auto scaling group
+	  3. add name and launch templete.
+	  4. add Elastic load ballance.
+	  5. confiure the scaling policies.
