@@ -338,16 +338,9 @@
 88.  ssh -i "demo-ec2.pem" ubuntu@50.18.85.216
 89.  asss
 90.  exit
-91.  ssh -i"demo-ec2.pem" ec2-user@13.56.79.16
-92.  ssh - i demo-ec2.pem ec2-user@13.56.79.16
-93.  ssh -i "demo-ec2.pem" ec2-user@13.56.79.16
+91.  ssh -i"demo-ec2.pem" ec2-user@13.56.79.1
 94.  ls -ltr
-95.  ssh -i "demo-ec2.pem ec2-user@172.31.19.29
-96.  ssh -i "demo-ec2.pem" ec2-user@172.31.19.29
-97.  ssh -i "demo-ec2.pem ec2-user@172.31.19.29
-98.  ssh -i "demo-ec2.pem" ec2-user@13.56.79.16
-99.  ssh -i "demo-ec2.pem ec2-user@172.31.19.29
-100.  ssh -i "demo-ec2.pem" ec2-user@13.56.79.16
+
 101. ls -ltr
 102.  ssh -i demo-ec2.pem ec2-user@13.56.79.16
 103.  history
