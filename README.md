@@ -160,8 +160,7 @@
 
     • su : it is command used to allows a user to switch to another user account or becomes the super account or root user.
               Ex :      nagaraju@nagaraju:~$ sudo su
-                        [sudo] password for nagaraju:
-                        root@nagaraju:/home/nagaraju# ^C
+                
                         root@nagaraju:/home/nagaraju# .
 
     • Chmod : it is a command to change the permissions of files and directories.
